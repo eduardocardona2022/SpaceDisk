@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131d36"/>
+      <stop offset="0.55" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#050810"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="55%">
+      <stop offset="0" stop-color="#5b8cff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#5b8cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7db0ff"/>
+      <stop offset="0.48" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <radialGradient id="core" cx="40%" cy="34%" r="72%">
+      <stop offset="0" stop-color="#d4e4ff"/>
+      <stop offset="1" stop-color="#5b8cff"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="390" fill="url(#glow)"/>
+
+  <!-- Soft outer halo -->
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#5b8cff" stroke-opacity="0.1" stroke-width="196"/>
+
+  <!-- Base track -->
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#1a2947" stroke-width="144"/>
+
+  <!-- Main gradient arc (56%) -->
+  <path
+    d="M 512 212 A 300 300 0 1 1 401.4 791"
+    fill="none" stroke="url(#ring)" stroke-width="144" stroke-linecap="round"
+  />
+
+  <!-- Teal accent arc (10%, starting at 62%) -->
+  <path
+    d="M 306.5 730.6 A 300 300 0 0 1 216.6 568.2"
+    fill="none" stroke="#2dd4bf" stroke-width="144" stroke-linecap="round"
+  />
+
+  <!-- Top highlight -->
+  <path
+    d="M 390 236 A 310 310 0 0 1 626 219"
+    fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="9" stroke-linecap="round"
+  />
+
+  <!-- Center hub -->
+  <circle cx="512" cy="512" r="122" fill="#0a1222" stroke="#8db8ff" stroke-opacity="0.45" stroke-width="9"/>
+  <circle cx="512" cy="512" r="86" fill="none" stroke="#213356" stroke-width="3"/>
+  <circle cx="512" cy="512" r="34" fill="url(#core)"/>
+
+  <!-- Subtle platter marks -->
+  <path d="M 455 395 A 160 160 0 0 1 569 395" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 388 512 A 124 124 0 0 0 636 512" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="3" stroke-linecap="round"/>
+</svg>

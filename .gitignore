@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+release/
+assets/icon-256.png
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
